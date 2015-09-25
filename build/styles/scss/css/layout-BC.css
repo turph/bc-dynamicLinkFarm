@@ -1,0 +1,28 @@
+/*
+Error: Invalid CSS after "...-active-columns": expected selector or at-rule, was ": 12,"
+        on line 3 of /working files/mockups/tdm.15.0000 framework/build/styles/scss/partials/layout-BC.scss
+
+1: // Define layout variables to create you layout
+2: $base-number-of-columns: 14,
+3: $base-number-of-active-columns: 12,
+4: $base-font-size: 1,
+5: $base-line-height: 1.5,
+6: $base-gutter-width: 1
+
+Backtrace:
+/working files/mockups/tdm.15.0000 framework/build/styles/scss/partials/layout-BC.scss:3
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1162:in `expected'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:1098:in `expected'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/scss/parser.rb:43:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:403:in `_to_tree'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:278:in `render'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:418:in `run'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:52:in `parse'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/CodeKit.app/Contents/Resources/engines/scss/bin/scss:13:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...-active-columns\": expected selector or at-rule, was \": 12,\"\A         on line 3 of /working files/mockups/tdm.15.0000 framework/build/styles/scss/partials/layout-BC.scss\A \A 1: // Define layout variables to create you layout\A 2: $base-number-of-columns: 14,\A 3: $base-number-of-active-columns: 12,\A 4: $base-font-size: 1,\A 5: $base-line-height: 1.5,\A 6: $base-gutter-width: 1"; }

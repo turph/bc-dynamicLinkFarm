@@ -1,0 +1,30 @@
+{
+  "name": "TDM NewProject",
+  "version": "1.0.0",
+  "homepage": "http:turphdesigns.com",
+  "authors": [
+    {
+      "name": "Tom Murphy",
+      "email": "turph1023@gmail.com",
+      "homepage": "http://www.turphdesigns.com"
+    }
+  ],
+  "description": "A Scaffold for use with CodeKit",
+  "main": "app/index.html",
+  "keywords": [
+    "codekit",
+    "automate",
+    "build",
+    "html",
+    "javascript",
+    "scaffold"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".codekit-cache",
+    ".gitignore",
+  ]
+}

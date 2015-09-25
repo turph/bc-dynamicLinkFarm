@@ -1,0 +1,15 @@
+// To see examples, see the Color Swatches PNG
+
+// Base Colors
+$white: #fff;
+$black: #000;
+
+
+
+
+
+// Add-on Color components found the /partials folder
+// ------------------------------------------------------------------------
+@import "partials/colors-BC";
+@import "partials/colors-facets";
+@import "partials/colors-ratingSystem";
