@@ -1,0 +1,49 @@
+@import 'functions';
+
+$fonts: (
+	primary:	""Conduit",Helvetica, Arial, Sans-Serif",
+);
+
+$colors: (
+	white:	#FFFFFF,
+	black:	#222222,
+	blue:	#3399CC,
+	red:	#FF0000,
+	orange: #e48325,
+	green: 	#99cc33,
+	gray-1:	#666666,
+	gray-2: #999999,
+	gray-3: #c2c2c2,
+	gray-4: #efefef,
+	
+	gray-0:	#FF0000,
+	gray-5:	#FF0000,
+	gray-6: #FF0000,
+	gray-7: #FF0000,
+	gray-8: #FF0000,
+	fullBlack: #FF0000
+);
+
+
+$weight: (
+	light: 200,
+	regular: 400,
+	bold:700,
+	extrabold: 800,
+	black:900
+);
+
+$colorFamily: (
+	beige:	#efb780,
+	black:	#000,
+	blue: 	#369,
+	brown:	#963,
+	gray:	#ccc,
+	green:	#093,
+	orange:	#f93,
+	pink:	#f39,
+	purple:	#639,
+	red:	#f00,
+	white:	#fff,
+	yellow:	#ff0
+);

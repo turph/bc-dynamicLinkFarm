@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dynamic Link Farm</title>		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	
+	<link rel="stylesheet" media="screen" href="assets/css/app.css">      
+</head>
+<script>
+	$(document).ready(function () {
+    $('#brandShowAll').click(function() {
+      $('#activityAll, #homeAll').hide();
+      $('#brandAll').slideToggle("slow", function() {
+      	// Animation complete
+      });
+			$(this).text($(this).text() == 'Show all categories' ? 'Hide all categories' : 'Show all categories');
+      return false;
+		});
+    $('#activityShowAll').click(function() {
+      $('#brandAll, #homeAll').hide();
+      $('#activityAll').slideToggle("slow", function() {
+      	// Animation complete
+      });
+			$(this).text($(this).text() == 'Show all categories' ? 'Hide all categories' : 'Show all categories');
+      return false;
+		});
+    $('#homeShowAll').click(function() {
+      $('#brandAll, #activityAll').hide();
+      $('#homeAll').slideToggle("slow", function() {
+      	// Animation complete
+      });
+			$(this).text($(this).text() == 'Show all categories' ? 'Hide all categories' : 'Show all categories');
+      return false;
+		});
+	});
+</script>
+<body>
+	<section class="normal"> <!-- Brand group -->
+		<div class="pageTemplateType">Brand Page</div>
+		<div class="lf_title">
+			<h2>Shop [brandname] by category</h2>
+			<p>Shop by Category</p>
+		</div>
+		<div class="col5">
+			<div class="groupTitles">
+				<div>Your favorites</div>
+				<div>Top categories</div>
+				<div>Gearhead suggestions</div>
+			</div>
+		</div>
+		<div class="col5 known">
+			<div class="catList p13n">
+				<a href="">Your favorite 1</a>
+				<a href="">Your favorite 2</a>
+				<a href="">Your favorite 3</a>
+				<a href="">Your favorite 4</a>
+			</div>
+			<div class="catList">
+				<a href="">Men's Clothing</a>
+				<a href="">Men's Jackets</a>
+				<a href="">Men's Pants</a>
+				<a href="">Men's Shirts</a>
+				<a href="">Men's Underwear & Baselayers</a>
+				<a href="">Men's Shorts</a>
+			</div>
+			<div class="catList">
+				<a href="">Women's Clothing</a>
+				<a href="">Women's Jackets</a>
+				<a href="">Women's Pants</a>
+				<a href="">Women's Tops</a>
+				<a href="">Women's Dresses & Skirts</a>
+				<a href="">Women's Shorts</a>
+			</div>
+			<div class="catList">
+				<a href="">Kids' Clothing</a>
+				<a href="">Boys' Clothing</a>
+				<a href="">Girls' Clothing</a>
+				<a href="">Toddler</a>
+				<a href="">Infants</a>
+				<a href="">Kids' Accessories</a>
+			</div>
+			<div class="catList">
+				<a href="">Ski</a>
+				<a href="">Bandanas & Ninja</a>
+				<a href="">Masks</a>
+				<a href="">Ski Clothing</a>
+			</div>
+			<div class="catList EGX">
+				<a href="">Option1</a>
+				<a href="">Option2</a>
+			</div>
+		</div>
+		<div class="lf_nav"><a href="" id="brandShowAll">Show all categories</a></div>
+		<div class="lf_all col5" id="brandAll" style="display:none">
+			<div class="lf_row">
+				<div class="catList">
+					<a href="">Men's Jackets</a>
+					<a href="">Men's Down Jackets</a>
+					<a href="">Men's Synthetic Insulation Jackets</a>
+					<a href="">Men's Technical Shells</a>
+					<a href="">Men's Rain Jackets</a>
+					<a href="">Men's Wind Shells</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Pants</a>
+					<a href="">Men's Technical Pant Shells</a>
+					<a href="">Men's Softshell Pants</a>
+					<a href="">Men's Rain and Wind Pants</a>
+					<a href="">Men's Casual Pants</a>
+					<a href="">Men's Insulated Pants</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Shirts</a>
+					<a href="">Men's Button-Down Shirts</a>
+					<a href="">Men's Polo Shirts</a>
+					<a href="">Men's Performance Shirts</a>
+					<a href="">Men's Flannel Shirts and Jackets</a>
+					<a href="">Men's T-Shirts</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Underwear & Baselayers</a>
+					<a href="">Men's Underwear</a>
+					<a href="">Men's Long Underwear</a>
+					<a href="">Men's Performance Tights</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Shorts</a>
+					<a href="">Men's Board Shorts</a>
+					<a href="">Men's Hiking & Climbing Shorts</a>
+					<a href="">Men's Casual Shorts</a>
+					<a href="">Men's Performance Shorts</a>
+					<a href="">Men's River & Water Shorts</a>
+				</div>
+			</div>
+			<div class="lf_row">
+				<div class="catList">
+					<a href="">Men's Shoes & Footwear</a>
+					<a href="">Men's Slippers</a>
+					<a href="">Men's Winter Boots & Shoes</a>
+					<a href="">Men's Sandals</a>
+					<a href="">Men's Water Shoes</a>
+					<a href="">Men's Rain Boots & Shoes</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Accessories</a>
+					<a href="">Men's Hats, Caps & Beanies</a>
+					<a href="">Men's Socks</a>
+					<a href="">Men's Gloves & Mittens</a>
+					<a href="">Blankets & Throws</a>
+					<a href="">Men's Belts</a>
+				</div>
+				<div class="catList">
+					<a href="">Sunglasses</a>
+					<a href="">Lifestyle Sunglasses</a>
+					<a href="">Sport Sunglasses</a>
+					<a href="">Interchangeable Sunglasses</a>
+					<a href="">Women's Sunglasses</a>
+					<a href="">Photochromic Sunglasses</a>
+				</div>
+				<div class="catList">
+					<a href="">Watches</a>
+					<a href="">Casual Watches</a>
+					<a href="">Altimeters</a>
+					<a href="">Heart Rate Monitors</a>
+					<a href="">Sport Watches</a>
+					<a href="">Women's Casual Watches</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Bike Clothing</a>
+					<a href="">Men's Triathlon Clothing</a>
+					<a href="">Men's Bike Shorts & Bibs</a>
+					<a href="">Men's Bike Jerseys</a>
+					<a href="">Men's Bike Jackets</a>
+					<a href="">Men's Bike Tights & Knickers</a>
+				</div>
+			</div>
+			<div class="lf_row">
+				<div class="catList">
+					<a href="">Men's Performance Clothing</a>
+					<a href="">Men's Hoodies & Sweatshirts</a>
+					<a href="">Men's Performance Pants & Tights</a>
+					<a href="">Men's Performance Shorts</a>
+					<a href="">Men's Performance Jackets</a>
+					<a href="">Men's Performance Vests</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Hoodies & Sweaters</a>
+					<a href="">Men's Hoodies & Sweatshirts</a>
+					<a href="">Men's Sweaters</a>
+				</div>
+				<div class="catList">
+					<a href="">Men's Fly Fishing Apparel</a>
+					<a href="">Fly Fishing Vests & Packs</a>
+					<a href="">Men's Bike Shorts & Bibs</a>
+					<a href="">Men's Bike Jerseys</a>
+					<a href="">Men's Bike Jackets</a>
+					<a href="">Men's Bike Tights & Knickers</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="normal"> <!-- Activity group -->
+		<div class="pageTemplateType">Category/Activity Page</div>
+		<div class="lf_title">
+			<h2>Shop the [activityname] catalog</h2>
+			<p>Shop by Category</p>
+		</div>
+		<div class="col5">
+			<div class="groupTitles">
+				<div>Your favorites</div>
+				<div>Top categories</div>
+				<div>Gearhead suggestions</div>
+			</div>
+		</div>
+		<div class="col5 known">
+			<div class="catList p13n">
+				<a href="">Your favorite 1</a>
+				<a href="">Your favorite 2</a>
+				<a href="">Your favorite 3</a>
+				<a href="">Your favorite 4</a>
+			</div>
+			<div class="catList">
+				<a href="">Sleeping Bags</a>
+				<a href="">Down Sleeping Bags</a>
+				<a href="">Synthetic Sleeping Bags</a>
+				<a href="">Bivy Sacks</a>
+				<a href="">Kids' Sleeping Bags</a>
+				<a href="">Sleeping Bag Liners</a>
+			</div>
+			<div class="catList">
+				<a href="">Tents</a>
+				<a href="">3-Season Tents</a>
+				<a href="">4-Season Tents</a>
+				<a href="">Single Wall Tents</a>
+				<a href="">Shelters, Tarps, & Screen Rooms</a>
+				<a href="">Bivy Sacks</a>
+			</div>
+			<div class="catList">
+				<a href="">Backpacks</a>
+				<a href="">Daypacks</a>
+				<a href="">Backpacking Backpacks</a>
+				<a href="">Travel Backpacks</a>
+			</div>
+			<div class="catList">
+				<a href="">Sleeping Pads</a>
+				<a href="">Lightweight Sleep Pads</a>
+				<a href="">Campground Sleep Pads</a>
+				<a href="">Midweight Sleep Pads</a>
+				<a href="">Sleeping Pad Accessories</a>
+				<a href="">Camping Pillows</a>
+			</div>
+			<div class="catList EGX">
+				<a href="">Option1</a>
+				<a href="">Option2</a>
+			</div>
+		</div>
+		<div class="lf_nav"><a href="" id="activityShowAll">Show all categories</a></div>
+		<div class="lf_all col5" id="activityAll" style="display:none">
+			<div class="lf_row">
+				<div class="catList">
+					<a href="">Sleeping Bags</a>
+					<a href="">Down Sleeping Bags</a>
+					<a href="">Synthetic Sleeping Bags</a>
+					<a href="">Bivy Sacks</a>
+					<a href="">Kids' Sleeping Bags</a>
+					<a href="">Sleeping Bag Liners</a>
+				</div>
+				<div class="catList">
+					<a href="">Tents</a>
+					<a href="">3-Season Tents</a>
+					<a href="">4-Season Tents</a>
+					<a href="">Single Wall Tents</a>
+					<a href="">Shelters, Tarps, & Screen Rooms</a>
+					<a href="">Bivy Sacks</a>
+				</div>
+				<div class="catList">
+					<a href="">Backpacks</a>
+					<a href="">Daypacks</a>
+					<a href="">Backpacking Backpacks</a>
+					<a href="">Travel Backpacks</a>
+				</div>
+				<div class="catList">
+					<a href="">Sleeping Pads</a>
+					<a href="">Lightweight Sleep Pads</a>
+					<a href="">Campground Sleep Pads</a>
+					<a href="">Midweight Sleep Pads</a>
+					<a href="">Sleeping Pad Accessories</a>
+					<a href="">Camping Pillows</a>
+				</div>
+				<div class="catList">
+					<a href="">Camp Kitchen</a>
+					<a href="">Pots & Pans</a>
+					<a href="">Flatware & Utensils</a>
+					<a href="">Cups, Mugs, & Flasks</a>
+					<a href="">Coffee & Tea Pots</a>
+					<a href="">Plates & Bowls</a>
+				</div>
+			</div>
+			<div class="lf_row">
+				<div class="catList">
+					<a href="">Hydration</a>
+					<a href="">Water Bottles</a>
+					<a href="">Water Filters</a>
+					<a href="">Water Purification</a>
+					<a href="">Water Bladders & Reservoirs</a>
+					<a href="">Hydration Packs</a>
+				</div>
+				<div class="catList">
+					<a href="">Hiking & Camping Accessories</a>
+					<a href="">Trekking Poles</a>
+					<a href="">Dog Packs & Accessories</a>
+					<a href="">Camp Towels</a>
+					<a href="">Batteries & Solar Power</a>
+					<a href="">Wilderness First Aid</a>
+				</div>
+				<div class="catList">
+					<a href="">Lighting</a>
+					<a href="">Headlamps and Accessories</a>
+					<a href="">Lanterns</a>
+					<a href="">Handheld Flashlights</a>
+					<a href="">Batteries & Solar Power</a>
+				</div>
+				<div class="catList">
+					<a href="">Camp Furniture</a>
+					<a href="">Hammocks</a>
+					<a href="">Camping Chairs</a>
+					<a href="">Campground Tables</a>
+					<a href="">Cots</a>
+					<a href="">Showers</a>
+				</div>
+				<div class="catList">
+					<a href="">Navigation</a>
+					<a href="">GPS</a>
+					<a href="">Compasses</a>
+					<a href="">Binoculars & Monoculars</a>
+					<a href="">Personal Locator Beacons</a>
+					<a href="">Altimeters</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="normal"> <!-- Home group -->
+		<div class="pageTemplateType">Home Page</div>
+		<div class="lf_title">
+			<h2>premium outdoor gear and clothing</h2>
+			<p>Shop by Category</p>
+		</div>
+		<div class="col5">
+			<div class="groupTitles">
+				<div>Your favorites</div>
+				<div>Top categories</div>
+				<div>Gearhead suggestions</div>
+			</div>
+		</div>
+		<div class="col5 known">
+			<div class="catList p13n">
+				<a href="">Your favorite 1</a>
+				<a href="">Your favorite 2</a>
+				<a href="">Your favorite 3</a>
+				<a href="">Your favorite 4</a>
+			</div>
+			<div class="catList">
+				<a href="">Men's Clothing</a>
+				<a href="">Jackets</a>
+				<a href="">Pants</a>
+				<a href="">Shirts</a>
+				<a href="">Underwear & Baselayers</a>
+				<a href="">Shorts</a>
+				<a href="">Footwear</a>
+				<a href="">Accessories</a>
+				<a href="">All ></a>
+			</div>
+			<div class="catList">
+				<a href="">Women's Clothing</a>
+				<a href="">Jackets</a>
+				<a href="">Tops</a>
+				<a href="">Pants</a>
+				<a href="">Dresses & Skirts</a>
+				<a href="">Shorts</a>
+				<a href="">Swimwear</a>
+				<a href="">Footwear</a>
+				<a href="">All ></a>
+			</div>
+			<div class="catList">
+				<a href="">Kids' Clothing</a>
+				<a href="">Boys Clothing</a>
+				<a href="">Girls' Clothing</a>
+				<a href="">Girls' Footwear</a>
+				<a href="">Toddler & Infants</a>
+				<a href="">Accessories</a>
+				<a href="">Strollers & Joggers</a>
+				<a href="">All ></a>
+			</div>
+			<div class="catList">
+				<a href="">Gear By Activity</a>
+				<a href="">Hike & Camp</a>
+				<a href="">Bike</a>
+				<a href="">Climb</a>
+				<a href="">Ski</a>
+				<a href="">Snowboard</a>
+				<a href="">Running</a>
+				<a href="">Fly-Fishing</a>
+				<a href="">Paddle</a>
+			</div>
+			<div class="catList EGX">
+				<a href="">Option1</a>
+				<a href="">Option2</a>
+			</div>
+		</div>
+		<div class="lf_nav"><a href="" id="homeShowAll">Show all categories</a></div>
+		<div class="lf_all col5" id="homeAll" style="display:none">
+			<div class="lf_row">
+				<div class="catList">
+					<a href="">Sleeping Bags</a>
+					<a href="">Down Sleeping Bags</a>
+					<a href="">Synthetic Sleeping Bags</a>
+					<a href="">Bivy Sacks</a>
+					<a href="">Kids' Sleeping Bags</a>
+					<a href="">Sleeping Bag Liners</a>
+				</div>
+				<div class="catList">
+					<a href="">Tents</a>
+					<a href="">3-Season Tents</a>
+					<a href="">4-Season Tents</a>
+					<a href="">Single Wall Tents</a>
+					<a href="">Shelters, Tarps, & Screen Rooms</a>
+					<a href="">Bivy Sacks</a>
+				</div>
+				<div class="catList">
+					<a href="">Backpacks</a>
+					<a href="">Daypacks</a>
+					<a href="">Backpacking Backpacks</a>
+					<a href="">Travel Backpacks</a>
+				</div>
+				<div class="catList">
+					<a href="">Sleeping Pads</a>
+					<a href="">Lightweight Sleep Pads</a>
+					<a href="">Campground Sleep Pads</a>
+					<a href="">Midweight Sleep Pads</a>
+					<a href="">Sleeping Pad Accessories</a>
+					<a href="">Camping Pillows</a>
+				</div>
+				<div class="catList">
+					<a href="">Camp Kitchen</a>
+					<a href="">Pots & Pans</a>
+					<a href="">Flatware & Utensils</a>
+					<a href="">Cups, Mugs, & Flasks</a>
+					<a href="">Coffee & Tea Pots</a>
+					<a href="">Plates & Bowls</a>
+				</div>
+			</div>
+			<div class="lf_row">
+				<div class="catList">
+					<a href="">Hydration</a>
+					<a href="">Water Bottles</a>
+					<a href="">Water Filters</a>
+					<a href="">Water Purification</a>
+					<a href="">Water Bladders & Reservoirs</a>
+					<a href="">Hydration Packs</a>
+				</div>
+				<div class="catList">
+					<a href="">Hiking & Camping Accessories</a>
+					<a href="">Trekking Poles</a>
+					<a href="">Dog Packs & Accessories</a>
+					<a href="">Camp Towels</a>
+					<a href="">Batteries & Solar Power</a>
+					<a href="">Wilderness First Aid</a>
+				</div>
+				<div class="catList">
+					<a href="">Lighting</a>
+					<a href="">Headlamps and Accessories</a>
+					<a href="">Lanterns</a>
+					<a href="">Handheld Flashlights</a>
+					<a href="">Batteries & Solar Power</a>
+				</div>
+				<div class="catList">
+					<a href="">Camp Furniture</a>
+					<a href="">Hammocks</a>
+					<a href="">Camping Chairs</a>
+					<a href="">Campground Tables</a>
+					<a href="">Cots</a>
+					<a href="">Showers</a>
+				</div>
+				<div class="catList">
+					<a href="">Navigation</a>
+					<a href="">GPS</a>
+					<a href="">Compasses</a>
+					<a href="">Binoculars & Monoculars</a>
+					<a href="">Personal Locator Beacons</a>
+					<a href="">Altimeters</a>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

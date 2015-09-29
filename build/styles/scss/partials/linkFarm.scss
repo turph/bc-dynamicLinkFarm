@@ -1,0 +1,34 @@
+.lf_title{
+	text-align:center;
+	h2, p{margin:0;}
+}
+.normal{font-size:18px;}
+.groupTitles{
+	text-transform:uppercase;font-weight:bold;color:$mid-gray;margin:20px 0 10px 0;
+	div{display:inline-block;margin-right:20px;}
+}
+.catList{
+	display:inline-block;vertical-align:top;
+	a{display:block;}
+	a:first-child{
+		font-weight:bold;color:$black;
+	}
+}
+.p13n, .EGX{
+	a:first-child{font-weight:normal;color:$bc-lt-blue;}	
+}
+
+.lf_nav{text-align:center;margin:30px 0;}
+.lf_row{margin-bottom:30px;}
+
+.known{div:nth-child(5) {display:none;}}
+.unknown{div:nth-child(1) {display:none;}}
+
+.col5{
+	.catList{width:18%;margin-right:20px;}
+	.groupTitles{
+		div:nth-child(1){width:18%;}
+		div:nth-child(2){width:54%;}
+		div:nth-child(3){width:18%;margin-left:46px;}
+	}
+}
